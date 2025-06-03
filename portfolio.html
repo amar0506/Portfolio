@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amar Vishwakarma | Portfolio</title>
+  <style>
+    :root {
+      --primary: #007bff;
+      --dark: #0f0f0f;
+      --light: #f4f4f4;
+      --accent: #00ffd5;
+      --font: 'Poppins', sans-serif;
+    }* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+body {
+  background: linear-gradient(to bottom, var(--light), var(--dark));
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: var(--dark);
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+
+.about img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0, 255, 213, 0.2);
+}
+
+.email-button {
+  background: var(--accent);
+  color: #000;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 1rem;
+}
+
+.email-button:hover {
+  background: #fff;
+  color: #000;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--dark);
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+@media(max-width: 600px) {
+  header h1 { font-size: 2rem; }
+  .section-title { font-size: 1.5rem; }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Amar Vishwakarma</h1>
+    <p>Diploma C.S.E Student / Frontend Developer</p>
+    <button class="email-button" onclick="revealEmail()">📧 TOUCH TO REVEAL</button>
+    <p id="email" style="display:none; margin-top: 0.5rem;">amarvishwakarma069@gmail.com</p>
+  </header>  <div class="container">
+    <section class="about">
+      <div style="text-align:center;">
+        <img src="amar.jpg" alt="Amar Vishwakarma Profile">
+      </div>
+      <h2 class="section-title">About Me</h2>
+      <p>I am Amar, a creative tech intern at AEGIS I-NET PVT. LTD and Web3 Growth Leader. Passionate about clean UI and meaningful experiences.</p>
+      <p><strong>Education:</strong> AKS University Satna M.P – Diploma in C.S.E</p>
+    </section><section>
+  <h2 class="section-title">Projects</h2>
+  <div class="card">
+    <h3>LMAO – Meme Sharing Platform</h3>
+    <p>An anonymous meme-sharing platform for free expression. From memes to shayari – it's real, raw, and unfiltered.</p>
+    <a href="https://lmao.unaux.com/" style="color:var(--accent);">🔗 Visit Project</a>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Skills</h2>
+  <ul>
+    <li>C</li>
+    <li>Canva</li>
+    <li>Picsart</li>
+    <li>Pixellab</li>
+  </ul>
+</section>
+
+<section>
+  <h2 class="section-title">Achievements</h2>
+  <div class="card">
+    <p>🏏 Cricket Achievement – District Level</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Stats</h2>
+  <p>📁 1+ Project | 🤝 Internship Completed | 🌐 Web3 Enthusiast</p>
+</section>
+
+<section>
+  <h2 class="section-title">Find Me</h2>
+  <p>🔗 <a href="https://www.linkedin.com/in/amar-vishwakarma-7627b331b" target="_blank" style="color:var(--accent);">LinkedIn</a></p>
+</section>
+
+  </div>  <footer>
+    &copy; 2025 Amar Vishwakarma • Building with Passion
+  </footer>  <script>
+    function revealEmail() {
+      document.getElementById("email").style.display = 'block';
+    }
+  </script></body>
+</html>
